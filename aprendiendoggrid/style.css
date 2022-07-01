@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(208, 127, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grib-layout {
+    height: 650px;
+    /*altura de las caja*/
+    display: grid;
+    /* grid-template-columns: 80% auto;
+    cantidad de colummas y modificarlas*/
+    /* grid-template-rows: auto auto;
+    modificar el comportamiento de fila dearriba y abajo*/
+    /* justify-content: stretch;
+    ajustar o alinear el contenido al principio */
+    /* width: 80%;
+   padding: 20px;
+    margin: 0 auto;*/
+    grid-template-areas: "cabecera cabecera" "menu menu" "contenido lateral" "footer footer";
+    background-color: rgb(224, 25, 25);
+    border: 1px solid rgb(5, 5, 5);
+    /*grid-template-rows: 20% 10% 60% auto;
+    pongo tamaño de cada caja 20 la cabecera 10 el menu el contenido en 60 */
+}
+
+.cajas {
+    border: 4px solid black;
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+    /* line-height: 150px;
+    float: left;
+   poner las cajas en linea */
+}
+
+.C1 {
+    grid-area: cabecera;
+    background-color: rgb(159, 159, 210);
+}
+
+.C2 {
+    grid-area: menu;
+    background-color: rgb(215, 142, 46);
+}
+
+.C3 {
+    grid-area: contenido;
+    background-color: rgb(81, 176, 92);
+}
+
+.C4 {
+    grid-area: lateral;
+    background-color: rgb(29, 165, 196);
+}
+
+.C5 {
+    grid-area: footer;
+    background-color: rgb(196, 29, 177);
+}
