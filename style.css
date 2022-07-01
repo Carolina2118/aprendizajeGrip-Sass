@@ -1,21 +1,54 @@
 body {
-    background-color: rgb(168, 127, 208);
+    background-color: rgb(208, 127, 199);
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .grib-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*cantidad de colummas y modificarlas*/
+    grid-template-rows: auto auto;
+    /*modificar el comportamiento de fila dearriba y abajo*/
+    justify-content: stretch;
+    /*ajustar o alinear el contenido al principio */
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: rgb(224, 25, 25);
+    padding: 20px;
+    border: 1px solid rgb(5, 5, 5);
 }
 
 .cajas {
-    width: 150px;
-    height: 150px;
     border: 4px solid black;
     background-color: beige;
-    margin: 15px;
     text-align: center;
     line-height: 150px;
-    float: left;
-    /* poner las cajas en linea */
+    /* float: left;
+   poner las cajas en linea */
+}
+
+.C1 {
+    grid-column: 1/4;
+    background-color: rgb(159, 159, 210);
+}
+
+.C2 {
+    grid-column: 1/3;
+    background-color: rgb(9, 86, 18);
+}
+
+.C3 {
+    grid-column: 3/4;
+    background-color: rgb(81, 176, 92);
+}
+
+.C4 {
+    grid-column: 1/3;
+    background-color: rgb(29, 165, 196);
+}
+
+.C12 {
+    grid-column: 1/4;
+    background-color: rgb(196, 29, 177);
 }
